@@ -8,7 +8,7 @@ public class player {
     String type;
     int runsScored;
     int wicketsTaken;
-
+    Scanner myScanner = new Scanner(System.in);
 
     public player(String name,int age,String type,int runsScored,int wicketsTaken){
      this.name = name;
@@ -20,15 +20,12 @@ public class player {
 
 
     public void getPlayerType(){
-        Scanner myScanner = new Scanner(System.in);
-        System.out.println("Enter player type - spin bowler, seam bowler, batsman or keeper : ");
-        type = myScanner.nextLine();
-        System.out.println(type);
+        System.out.println("Player type is: "+type);
     }
 
-    public double getBattingAvg(){
+    public void  getBattingAvg(){
         double battingAvg = this.runsScored/15;
-        return battingAvg;
+        System.out.println("Batsman average is : "+battingAvg);
     }
 
     public void getPlayerDetails(){
@@ -40,6 +37,10 @@ public class player {
     }
 
     public static void main(String[]args){
+            player Perera = new player("perera",25,"batsman",165,0);
+            Perera.getPlayerType();
+            Perera.getBattingAvg();
+            Perera.getPlayerDetails();
 
     }
 }
