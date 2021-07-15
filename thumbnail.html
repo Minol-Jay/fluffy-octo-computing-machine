@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thumbnail page</title>
+  <style>
+
+  </style>
+</head>
+<body>
+<fieldset style="border: 2px solid #000000">
+<form>
+  Background color:
+  <select name="background" onChange=(document.body.style.backgroundColor=background.options[background.selectedIndex].value)>
+    <option value="#ffffff">White</option>
+    <option value="#808080">Grey</option>
+    <option value="#F5F5DC">Beige</option>
+    <option value="#98FB98">Pale Green</option>
+    <option value="#E0FFFF">Light Cyan</option>
+    <option value="#ffcccc">Light Red</option>
+  </select>
+
+  Change the text color:
+  <select name="textColor" onChange=(document.body.style.color=textColor.options[textColor.selectedIndex].value)>
+    <option value="#000000">Black</option>
+    <option value="#FFFFFF" >White</option>
+    <option value="#B22222">Dark Red</option>
+    <option value="#DAA520">Gold</option>
+    <option value="#228B22">Dark Green</option>
+    <option value="#0206FF">Blue</option>
+  </select>
+</form>
+</fieldset>
+</body>
+</html>
